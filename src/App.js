@@ -1,6 +1,8 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 
+import Search from "./Search";
+
 function App() {
   return (
     <div className="App">
@@ -8,7 +10,9 @@ function App() {
         <header className="App-header">
           <h1>Weather Application</h1>
         </header>
-        <main></main>
+        <main>
+          <Search />
+        </main>
         <footer>
           <a
             href="https://github.com/kmlaird/weather-app-react.git"
