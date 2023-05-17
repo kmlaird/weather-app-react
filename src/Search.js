@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
+import CurrentWeather from "./CurrentWeather";
 
 export default function Search() {
+  const [message, setMessage] = useState("");
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    setMessage(<CurrentWeather />);
+  }
   return (
-    <form>
-      <input type="text" placeholder="Enter a city here."></input>
-      <input type="submit" value="Search"></input>
-    </form>
+    <div className="Search">
+      <form onSubmit={handleSubmit}>
+        <input type="text" placeholder="Enter a city here."></input>
+        <input type="submit" value="Search"></input>
+      </form>
+      {message}
+    </div>
   );
 }
