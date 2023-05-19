@@ -11,7 +11,7 @@ export default function Search() {
   return (
     <div className="Search">
       <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="Enter a city here."></input>
+        <input type="search" placeholder="Enter a city here."></input>
         <input type="submit" value="Search"></input>
       </form>
       {message}
