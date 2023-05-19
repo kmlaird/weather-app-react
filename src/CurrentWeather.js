@@ -1,9 +1,10 @@
 import React from "react";
 import Forecast from "./Forecast";
+import "./CurrentWeather.css";
 
 export default function CurrentWeather() {
   return (
-    <div>
+    <div className="cw">
       <h2>Currently in City</h2>
       <div className="row">
         <div className="col-4">
